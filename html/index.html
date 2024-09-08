@@ -15,27 +15,36 @@
   <div id="header">
     <div class="container">
       <nav>
-        <img src="harini-logo (1).jpg" class="logo">
-        <ul>
+        <ul id="menu">
           <li><a href="#home">HOME</a></li>
           <li><a href="#about">ABOUT</a></li>
           <li><a href="#portfolio">PORTFOLIO</a></li>
           <li><a href="#contact">CONTACT</a></li>
+         <i class="fa-solid fa-x" onclick="closemenu()"></i>
         </ul>
+        <i class="fa-solid fa-bars" onclick="openmenu()"></i>
       </nav>
+
+      <div id="home">
       <div class="header-text">
         <h1>Hi, I am <span>Harini</span><br> From Salem</h1>
       </div>
+       <div class="img">
+        <img src="hariniii.jpeg">
+       </div>
+    </div>
     </div>
   </div>
   
   <div id="about">
     <div class="container">
       <h1 class="sub-title">ABOUT ME</h1>
-      <p>I am Harini from Salem. I have currently studing <span>B.Tech(IT)</span> <br>
+        <p>I have currently studing <span>B.Tech(IT)</span>
         3rd year at R P SARATHY INSTITUTE OF TECHNOLOGY
-        in Salem. I had completed in first year with <span>7.9 CGEPA</span> 
-        I have learned some programming languages
+        in Salem. I had completed in first year with <span>8.22 GPA</span> 
+        and also completed second year with <span>7.96 GPA</span> over all
+        <span>CGPA 8.08</span>.
+        I learned some programming languages
         like <span> Python, C, Java </span> and scripting languages
         are <span>Html,Css</span> and I know the basics for these languages. I have interested in
         programming languages so, I choosed in this field.
@@ -49,10 +58,13 @@
        
       </p>
       </div>
+    </div>
+    <div id="portfolio">
+        <h1 class="sub-title">PORTFOLIO</h1>
       <div class="tab-titles">
         <p>SKILLS</p>
-        </div>
-    <div class="tab-contents">
+      </div>
+     <div class="tab-contents">
        <ul>
          <li><i class="fa-brands fa-python"></i> PYHTON</li>
          <li><i class="fa-solid fa-c"></i>  C</li>
@@ -75,23 +87,7 @@
             with<span> 69.9 %</span></li>
         </ul>
       </div>
- 
-  <div id="portfolio">
-    <div class="container">
-      <h1 class="sub-title">EDUCATION</h1>
-      <div class="edu-list">
-        <div class="edu">
-          <img src="work1.jpg">
-        </div>
-      </div>
-      <div class="edu">
-        <img src="work5.jpg">
-      </div>
-      <div class="edu">
-        <img src="work3.jpg">
-      </div>
     </div>
-  </div>
     
   <div id="contact">
     <div class="container">
@@ -119,5 +115,18 @@
       </form>
     </div>
   </div>
+  <script>
+  var menu = document.getElementById("menu");
+
+function openmenu(){
+
+    menu.style.right = "0";
+}
+function closemenu(){
+
+    menu.style.right = "-200px";
+}
+</script>
 </body>
 </html>
+
